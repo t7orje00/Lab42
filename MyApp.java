@@ -4,7 +4,11 @@ public class MyApp
     {       
         Product product = new Product("Edam", 3.3, 120);
 
+
+        product.changePrice(4.4);
+
         product.changeAmount(150);
+
 
         System.out.println("Product value is " + product.countValue());
         product.printProduct();  
@@ -25,10 +29,17 @@ public class MyApp
      }
      
 
+
+     public double changePrice(double newvalue)
+     {
+         price = newvalue;
+         return price;
+     }
      public int changeAmount(int newvalue)
      {
          amount = newvalue;
          return amount;
+
      }
 
      
